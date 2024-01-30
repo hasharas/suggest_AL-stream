@@ -1,0 +1,186 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body {
+     background-image:url('../static/fbg.jpg');
+     font-family: verdana;
+     background-color: #EFEEED;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: bottom;
+     animation: loadtransition 2s;
+     height: 100vh;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .gardient
+ {
+    background:#00000069;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    z-index: -1;
+ }
+/* ***************************** */
+ .name{
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F97700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 1s;
+    z-index: 100;
+    width: 100%;
+    position: absolute;
+}
+
+div.name:hover{
+    letter-spacing: 2px;
+    color:aquamarine;
+}
+/* ************************************* */
+.data_div
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.project{
+    box-shadow: 0px 7px 60px -10px black;
+    font-size: 15px;
+    border-radius: 10px;
+    color: #ddd;
+    width: 560px;
+	
+}
+
+
+h1 {
+     font-size: 26px;
+     color: black;
+     font-family: initial;
+     padding: 10px;
+     text-align: center;
+ }
+
+input, select{
+     display: block;
+     width: 75%;
+     border: aliceblue;
+     border-radius: 6px;
+     outline: 4px;
+     padding: 7px;
+     margin: 10px auto;
+     box-shadow: 0px 0px 13px -5px;
+     transition: all .25s;
+ }
+
+ select 
+ {
+    width: 78%;
+ }
+
+input:hover{
+     margin: 15px auto;
+     width: 80%;
+ }
+
+
+form{
+     background: rgba(255, 255, 255, 0.8);
+     border-radius: 10px;
+     padding-left: 20px;
+     padding-bottom: 10px;
+ }
+
+ form h1
+ {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(31, 31, 31);
+ }
+
+center input{
+     display: inline-block;
+     background-color: rgba(255, 255, 255);
+     color: black;
+     width:25%;
+     transition: all .25s;
+ }
+
+input.btn:hover{
+     background-color: darkgreen;
+     color: white;
+     letter-spacing: 2px;
+     width:30%
+ }
+
+ .input_div
+ {
+    display: flex;
+    align-items: center;
+ }
+
+ .input_div label
+ {
+    width: 80px;
+    color: rgb(59, 59, 59);
+ }
+/* ************************************ */
+
+.context{
+    width: 40%;
+    color: black;
+    font-size: 20px;
+    font-family: cursive;
+}
+.context p 
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    height: auto;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+/* div.context:hover{
+    background-color:grey;
+    color:white;
+    padding: 60px;
+    margin: 8em 4em 1em ;
+} */
+
+p{
+    font-size: 20px;
+    margin: 10px 10px 10px 10px;
+    color: black
+}
+
+/* ***************************************** */
+
+
+@keyframes loadtransition{
+    from{
+       opacity:0;
+       transform: rotateX(-10deg);
+
+    }
+    to{
+       opacity:1;
+       transform: rotateX(0deg);
+    }
+ }

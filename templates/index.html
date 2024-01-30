@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+   <head>
+      <link rel= "stylesheet" href="../static/style.css">
+
+      <!--for bg image in html file-->
+     
+      <title>AL-STREAM</title></title>
+   </head>
+   <body>
+      
+         <div class="name">
+           Navigate Your A-Level Journey
+         </div>
+
+         <div class="data_div">
+
+               <div class="project">
+                  <form method="POST" action="/upload" enctype = "multipart/form-data">
+                     <h1 >O-Level Exam Results</h1>
+
+                     <div class="input_div">
+                        <label>Maths</label>
+                        <select name="Maths" style="color: #525252;">
+                           <option value="" disabled selected >Select an option</option>
+                           <option value="0">A</option>
+                           <option value="1">B</option>
+                           <option value="2">C</option>
+                           <option value="3">S</option>
+                           <option value="4">F</option>
+                        </select>
+                     </div>
+                     
+                     <div class="input_div">
+                        <label>Science</label>
+                        <select name="Science" style="color: #525252;">
+                           <option value="" disabled selected >Select an option</option>
+                           <option value="0">A</option>
+                           <option value="1">B</option>
+                           <option value="2">C</option>
+                           <option value="3">S</option>
+                           <option value="4">F</option>
+                        </select>
+                     </div>
+
+                     <div class="input_div">
+                        <label>English</label>
+                        <select name="English" style="color: #525252;">
+                           <option value="" disabled selected >Select an option</option>
+                           <option value="0">A</option>
+                           <option value="1">B</option>
+                           <option value="2">C</option>
+                           <option value="3">S</option>
+                           <option value="4">F</option>
+                        </select>
+                     </div>
+					 
+					 <div class="input_div">
+                        <label>Sinhala</label>
+                        <select name="Sinhalese" style="color: #525252;">
+                           <option value="" disabled selected >Select an option</option>
+                           <option value="0">A</option>
+                           <option value="1">B</option>
+                           <option value="2">C</option>
+                           <option value="3">S</option>
+                           <option value="4">F</option>
+                        </select>
+                     </div>
+
+                     <div class="input_div">
+                        <label>History</label>
+                        <select name="History" style="color: #525252;">
+                           <option value="" disabled selected >Select an option</option>
+                           <option value="0">A</option>
+                           <option value="1">B</option>
+                           <option value="2">C</option>
+                           <option value="3">S</option>
+                           <option value="4">F</option>
+                        </select>
+                     </div>
+
+                     <div class="input_div">
+                        <label>Religion</label>
+                        <select name="Religion" style="color: #525252;">
+                           <option value="" disabled selected >Select an option</option>
+                           <option value="0">A</option>
+                           <option value="1">B</option>
+                           <option value="2">C</option>
+                           <option value="3">S</option>
+                           <option value="4">F</option>
+                        </select>
+                     </div>
+					 
+					 <div class="input_div">
+                        <label>groupI</label>
+                        <select name="groupI" style="color: #525252;">
+                           <option value="" disabled selected >Select an option</option>
+                           <option value="0">A</option>
+                           <option value="1">B</option>
+                           <option value="2">C</option>
+                           <option value="3">S</option>
+                           <option value="4">F</option>
+                        </select>
+                     </div>
+
+                     <div class="input_div">
+                        <label>groupII</label>
+                        <select name="groupII" style="color: #525252;">
+                           <option value="" disabled selected >Select an option</option>
+                           <option value="0">A</option>
+                           <option value="1">B</option>
+                           <option value="2">C</option>
+                           <option value="3">S</option>
+                           <option value="4">F</option>
+                        </select>
+                     </div>
+
+                     <div class="input_div">
+                        <label>groupIII</label>
+                        <select name="groupIII" style="color: #525252;">
+                           <option value="" disabled selected >Select an option</option>
+                           <option value="0">A</option>
+                           <option value="1">B</option>
+                           <option value="2">C</option>
+                           <option value="3">S</option>
+                           <option value="4">F</option>
+                        </select>
+                     </div>
+
+                     <div class="input_div">
+                        <label>Gender</label>
+                        <select name="Gender" style="color: #525252;">
+                           <option value="" disabled selected >Select an option</option>
+                           <option value=0 >Male</option>
+                           <option value="1">Female</option>
+                        </select>
+                     </div>
+                     
+                     <center><input class="btn" type=submit name="submit_button" value=PREDICT></center>
+                  </form>
+               </div>
+
+
+               <div class="context">
+                  <p>Result here is : {{result}}</p>
+               </div>
+               
+         </div>
+         <div class="gardient"></div>
+   </body>
+</html>
